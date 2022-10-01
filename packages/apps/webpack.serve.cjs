@@ -14,6 +14,9 @@ module.exports = merge(
       hot: true,
       open: false,
       port: 3000,
+      allowedHosts: [
+      "aum.3exp8.network"
+      ],
       static: path.resolve(__dirname, 'build')
     },
     plugins: [

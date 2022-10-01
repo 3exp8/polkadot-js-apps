@@ -14,22 +14,25 @@ interface EnvWindow {
 }
 
 export function createCustom (t: TFunction): LinkOption[] {
-  const WS_URL = (
-    (typeof process !== 'undefined' ? process.env?.WS_URL : undefined) ||
-    (typeof window !== 'undefined' ? (window as EnvWindow).process_env?.WS_URL : undefined)
-  );
+  // const WS_URL = (
+  //   (typeof process !== 'undefined' ? process.env?.WS_URL : undefined) ||
+  //   (typeof window !== 'undefined' ? (window as EnvWindow).process_env?.WS_URL : undefined)
+  // );
+
+  const WS_URL="ws://aum-rpc.3exp8.network"
+  //const WS_URL="ws://127.0.0.1:9944"
 
   return WS_URL
     ? [
       {
         isHeader: true,
-        text: t('rpc.dev.custom', 'Custom environment', { ns: 'apps-config' }),
+        text: t('rpc.dev.custom', 'AUM Network', { ns: 'apps-config' }),
         textBy: '',
         value: ''
       },
       {
         info: 'WS_URL',
-        text: t('rpc.dev.custom.entry', 'Custom {{WS_URL}}', { ns: 'apps-config', replace: { WS_URL } }),
+        text: t('rpc.dev.custom.entry', 'AUM {{WS_URL}}', { ns: 'apps-config', replace: { WS_URL } }),
         textBy: WS_URL,
         value: WS_URL
       }

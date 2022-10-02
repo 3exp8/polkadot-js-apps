@@ -19,8 +19,9 @@ export function createCustom (t: TFunction): LinkOption[] {
   //   (typeof window !== 'undefined' ? (window as EnvWindow).process_env?.WS_URL : undefined)
   // );
 
-  const WS_URL="ws://aum-rpc.3exp8.network"
-  //const WS_URL="ws://127.0.0.1:9944"
+  const WS_URL = 'wss://aum-rpc.3exp8.network';
+
+  // const WS_URL="ws://127.0.0.1:9944"
 
   return WS_URL
     ? [

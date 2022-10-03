@@ -15,7 +15,8 @@ module.exports = merge(
       open: false,
       port: 3000,
       allowedHosts: [
-      "aum.3exp8.network"
+      "aum.3exp8.network",
+      "aum.coinpay.network"
       ],
       static: path.resolve(__dirname, 'build')
     },

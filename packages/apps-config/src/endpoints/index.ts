@@ -21,7 +21,7 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false, w
       isDisabled: false,
       isHeader: true,
       isSpaced: true,
-      text: t('aum-rpc.3exp8.network', 'AUM', { ns: 'apps-config' }),
+      text: t('aum-rpc.coinpay.network', 'AUM', { ns: 'apps-config' }),
       textBy: '',
       value: ''
     },

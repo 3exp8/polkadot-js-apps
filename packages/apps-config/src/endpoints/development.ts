@@ -19,7 +19,7 @@ export function createCustom (t: TFunction): LinkOption[] {
   //   (typeof window !== 'undefined' ? (window as EnvWindow).process_env?.WS_URL : undefined)
   // );
 
-  const WS_URL = 'wss://aum-rpc.3exp8.network:443';
+  const WS_URL = 'wss://aum-rpc.coinpay.network:443';
 
   // const WS_URL="ws://127.0.0.1:9944"
 
